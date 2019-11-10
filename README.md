@@ -122,14 +122,45 @@ a) Periodically delete experimental branches
 - Prototype smell - time pressure can push prototype to production
 
 #### MITIGATION STRATEGY:
-a) 
+a) ad Prototype smell - be aware during development - write tests along the way
+****
 
-### 3. Undeclared Consumers
+## Changes in Real World
+### 12. Fixed threshold in Dynamic systems
 
-- 
+- static thresholds for decision function are dangerous in changing world
 
 #### MITIGATION STRATEGY:
-a) 
+a) Learn threshold in simple holdout evaluation each time
+
+### 13. Monitoring & Testing
+
+- comprehensive live monitoring of system behavior
+in real time combined with automated response is critical for long-term system reliability
+
+#### MITIGATION STRATEGY:
+a) Prediction Bias - distribution of predicted labes vs distribution of observed labels should be same
+b) Average observed value
+c) Action Limits - eg in bidding - max value on bid, max amount of positive bids
+d) Upstream Procedures - monitor success of preprocess/ingest/store pipelines
+
+### 14. Reproducibility Debt
+
+- make sure to be able to reproduce experiments that led to production decision
+
+#### MITIGATION STRATEGY:
+a) Keep experiments log
+
+### 15. Cultural Debt
+
+- hard line between ML research and engineering
+
+#### MITIGATION STRATEGY:
+a) reward deletion of features
+b) reward reduction of complexity
+c) reward improvements in reproducibility
+d) reward stability
+e) reward monitoring
 
 
 
