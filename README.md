@@ -1,4 +1,4 @@
-# Take-aways from Hidden Technical Debt in Machine Learning Systems [link](https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf)
+# Take-aways from [Hidden Technical Debt in Machine Learning Systems](https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf)
 
 In this snippet I decided to summarize main findings from paper published by Google describing phenoema that most of the real-world ML systems incur massive ongoing maintenance costs (in SE terms **technical debt**). 
 
