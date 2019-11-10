@@ -31,8 +31,8 @@ In this snippet I decided to summarize main findings from paper published by Goo
 - due to CACE as opposite to SE design pattern encapsulation & modular design is hard
 
 #### MITIGATION STRATEGY:
-a) isolate models & serve ensembles where errors in the components models are uncorrelated
-b) detect changes in predictions as they occur [paper](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/41159.pdf)
+1. isolate models & serve ensembles where errors in the components models are uncorrelated
+2. detect changes in predictions as they occur [paper](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/41159.pdf)
 
 ### 2. Correction Cascades
 
@@ -40,7 +40,7 @@ b) detect changes in predictions as they occur [paper](https://static.googleuser
 - it is hard do improvements on *model X* then since any change can influence *model Y*.
 
 #### MITIGATION STRATEGY:
-a) add deterministic features to *model X* to distinguish between modelling A or B.
+1. add deterministic features to *model X* to distinguish between modelling A or B.
 
 
 ### 3. Undeclared Consumers
@@ -49,8 +49,8 @@ a) add deterministic features to *model X* to distinguish between modelling A or
 - change in model then obviously unintentionally affect behavioour of that system
 
 #### MITIGATION STRATEGY:
-a) access restrictions
-b) SLAs
+1. access restrictions
+2. SLAs
 ****
 
 ## Data Dependencies
@@ -60,7 +60,7 @@ b) SLAs
 - eg. if there is miscalibration in input sensor, model will learn that and once fixed model is biased
 
 #### MITIGATION STRATEGY:
-a) versioned copy of all signal with static mapping (relevant mainly for latent spaces)
+1. versioned copy of all signal with static mapping (relevant mainly for latent spaces)
 
 ### 5. Underutilized Data Dependencies
 
@@ -70,7 +70,7 @@ a) versioned copy of all signal with static mapping (relevant mainly for latent 
 - Correlated features - models picks one of two correlated features which is less causal. If correlations change this is problem.
 
 #### MITIGATION STRATEGY:
-a) Run Leave-one-feature-out regularly to identify & remove redundant features
+1. Run Leave-one-feature-out regularly to identify & remove redundant features
 ****
 
 ## Feedback Loops
@@ -79,15 +79,15 @@ a) Run Leave-one-feature-out regularly to identify & remove redundant features
 - basic supervised algs are used more than theoretically optimal Contextual MABs (have problems with wide action spaces)
 
 #### MITIGATION STRATEGY:
-a) use randomization for small sample of data (or tune MABs)
+1. use randomization for small sample of data (or tune MABs)
 
 ### 7. Hidden Feedback Loops
 
 - two models influence each other. Environments are not isolated well enough.
 
 #### MITIGATION STRATEGY:
-a) Take into account other model as feature if possible
-b) Simply be aware of that
+1. Take into account other model as feature if possible
+2. Simply be aware of that
 ****
 
 ## Design Anti-Patterns
@@ -97,7 +97,7 @@ b) Simply be aware of that
 - too many generalized packages means less flexibility in modelling specific env properties & tweaking loss functions
 
 #### MITIGATION STRATEGY:
-a) Consider creating clean native solution
+1. Consider creating clean native solution
 
 ### 9. Pipeline Jungles
 
@@ -105,7 +105,7 @@ a) Consider creating clean native solution
 - a lot of intermediate outputs
 
 #### MITIGATION STRATEGY:
-a) Think holistically about data collection & feature extraction
+1. Think holistically about data collection & feature extraction
 
 ### 10. Dead Experimental Code
 
@@ -113,7 +113,7 @@ a) Think holistically about data collection & feature extraction
 - can cause leaks to production
 
 #### MITIGATION STRATEGY:
-a) Periodically delete experimental branches
+1. Periodically delete experimental branches
 
 ### 11. Common Smells
 
@@ -122,7 +122,7 @@ a) Periodically delete experimental branches
 - Prototype smell - time pressure can push prototype to production
 
 #### MITIGATION STRATEGY:
-a) ad Prototype smell - be aware during development - write tests along the way
+1. ad Prototype smell - be aware during development - write tests along the way
 ****
 
 ## Changes in Real World
@@ -131,7 +131,7 @@ a) ad Prototype smell - be aware during development - write tests along the way
 - static thresholds for decision function are dangerous in changing world
 
 #### MITIGATION STRATEGY:
-a) Learn threshold in simple holdout evaluation each time
+1. Learn threshold in simple holdout evaluation each time
 
 ### 13. Monitoring & Testing
 
@@ -139,28 +139,28 @@ a) Learn threshold in simple holdout evaluation each time
 in real time combined with automated response is critical for long-term system reliability
 
 #### MITIGATION STRATEGY:
-a) Prediction Bias - distribution of predicted labes vs distribution of observed labels should be same
-b) Average observed value
-c) Action Limits - eg in bidding - max value on bid, max amount of positive bids
-d) Upstream Procedures - monitor success of preprocess/ingest/store pipelines
+1. Prediction Bias - distribution of predicted labes vs distribution of observed labels should be same
+2. Average observed value
+3. Action Limits - eg in bidding - max value on bid, max amount of positive bids
+4. Upstream Procedures - monitor success of preprocess/ingest/store pipelines
 
 ### 14. Reproducibility Debt
 
 - make sure to be able to reproduce experiments that led to production decision
 
 #### MITIGATION STRATEGY:
-a) Keep experiments log
+1. Keep experiments log
 
 ### 15. Cultural Debt
 
 - hard line between ML research and engineering
 
 #### MITIGATION STRATEGY:
-a) reward deletion of features
-b) reward reduction of complexity
-c) reward improvements in reproducibility
-d) reward stability
-e) reward monitoring
+1. reward deletion of features
+2. reward reduction of complexity
+3. reward improvements in reproducibility
+4. reward stability
+5. reward monitoring``
 
 
 
