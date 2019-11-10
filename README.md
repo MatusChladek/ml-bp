@@ -160,7 +160,7 @@ in real time combined with automated response is critical for long-term system r
 2. reward reduction of complexity
 3. reward improvements in reproducibility
 4. reward stability
-5. reward monitoring``
+5. reward monitoring
 
 
 
