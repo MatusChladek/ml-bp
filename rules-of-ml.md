@@ -79,7 +79,8 @@ whenever possible.
 - keep same language in training and serving envs
 #### Rule #33: If you produce a model based on the data until January 5th, test the model on the data from January 6th and after. 
 - area under the curve, which represents the likelihood of giving the positive example a score higher than a negative example
-#### Rule #34: In binary classification for filtering (such as spam detection or determining interesting e­mails), make small short­term sacrifices in performance for very clean data. - do not try to learn on missclassified data directly but rather keep holdout data (eg keep sending email to customers on crazy hours) to keep training sample nonbiased
+#### Rule #34: In binary classification for filtering (such as spam detection or determining interesting e­mails), make small short­term sacrifices in performance for very clean data. 
+- do not try to learn on missclassified data directly but rather keep holdout data (eg keep sending email to customers on crazy hours) to keep training sample nonbiased
 #### Rule #35: Beware of the inherent skew in ranking problems. 
 - when you switch ranking alg (aka test open feqs on times which does not make sense but you want data) you are changing data your alg will see
 #### Rule #36: Avoid feedback loops with positional features. 
