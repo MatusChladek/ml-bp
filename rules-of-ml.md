@@ -74,8 +74,7 @@ do usability testing (one description is in Steve Krug’s Don’t Make Me Think
 - Importance weighting means that if you decide that you are going to sample example X with a 30% probability, then give it a weight of 10/3. add eg exponential decay as new feature to your dset
 #### Rule #31: Beware that if you join data from a table at training and serving time, the data in the table may change. 
 - prevent data leakage in both directions (use featuretools instead of dummy way)
-#### Rule #32: Re­use code between your training pipeline and your serving pipeline
-whenever possible. 
+#### Rule #32: Re­use code between your training pipeline and your serving pipeline whenever possible. 
 - keep same language in training and serving envs
 #### Rule #33: If you produce a model based on the data until January 5th, test the model on the data from January 6th and after. 
 - area under the curve, which represents the likelihood of giving the positive example a score higher than a negative example
