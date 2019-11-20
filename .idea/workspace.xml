@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6efacce4-e391-4416-ae62-4f2ad36a17cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/ml_TestPyramid.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,7 +64,7 @@
       <workItem from="1573472511353" duration="1876000" />
       <workItem from="1573487766936" duration="111000" />
       <workItem from="1573734637449" duration="559000" />
-      <workItem from="1574273058697" duration="265000" />
+      <workItem from="1574273058697" duration="523000" />
     </task>
     <servers />
   </component>
